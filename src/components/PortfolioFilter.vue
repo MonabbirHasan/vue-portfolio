@@ -340,8 +340,8 @@ export default {
 
 .portfolio-card .card-link a span:first-child {
     font-size: 2.3rem;
-    box-shadow: 2px 2px 5px #eee;
-    filter: drop-shadow(2px 4px 6px black);
+    /* box-shadow: 2px 2px 5px #eee;
+    filter: drop-shadow(2px 4px 6px black); */
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -352,11 +352,12 @@ export default {
 
 .portfolio-card .card-link a span:last-child {
     font-size: 2.3rem;
-    box-shadow: 2px 2px 5px #eee;
+    /* box-shadow: 2px 2px 5px #eee; */
     filter: drop-shadow(2px 3px 4px black);
     width: 40px;
     height: 40px;
     border-radius: 100%;
+    border: 3px solid #333;
     display: flex;
     justify-content: center;
     align-items: center;

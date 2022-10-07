@@ -81,11 +81,11 @@ export default {
     padding: 50px 0;
 }
 
-.services .title h1 {
+.title h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2rem;
     display:inline-block;
     border-bottom:2px solid #2196f3;
     padding: 10px 0;

@@ -7,15 +7,21 @@
                         <h4>monabbirhasan</h4>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
                         </p>
-                        <span>
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </span>
-                        <span>
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </span>
-                        <span>
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </span>
+                        <a href="#">
+                            <span>
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span>
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span>
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </span>
+                        </a>
                     </div>
                     <div class="col-md-4 footer-item">
                         <h4>services</h4>
@@ -52,7 +58,7 @@ footer {
 
 .footer-item h4,
 p {
-    padding: 10px;
+    padding: 5px;
     text-align: left;
     color: #fff;
 }
@@ -71,6 +77,16 @@ p {
     font-size: 2rem;
     font-weight: bolder;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.footer-item span:hover{
+    color: #000;
+}
+.footer-item p{
+    cursor: pointer;
+}
+.footer-item p:hover{
+    color: #000;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="banner">
-        <div class="banner-content row">
-            <div class="banner-left col-md-6">
+        <div class="banner-content">
+            <div class="banner-left ">
                 <div class="left-content">
                     <h3>Hi.</h3>
                     <h1>I am monabbirhasan</h1>
@@ -16,7 +16,7 @@
                         role="button">Hire me</a>
                 </div>
             </div>
-            <div class="banner-right col-md-6">
+            <div class="banner-right">
                 <img src="../assets/my.jpg" class="img-fluid" alt="monabbirhasan Monabbir Hasan who is monabbir-hasan ">
                 <span></span>
                 <span></span>
@@ -40,6 +40,10 @@ export default {
     display: table-cell;
     vertical-align: middle;
     position: relative;
+}
+.banner-content{
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .banner-right::before {

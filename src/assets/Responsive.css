@@ -1,0 +1,415 @@
+/* body{
+    background-color: black;
+}
+/* body >a,p,h1,h2,h3,h4,h5,h6,span{
+    color: #fff!important;
+} */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .service-item .title h3 {
+    font-size: 15px;
+  }
+  .banner-right::before {
+    position: inherit;
+  }
+  .banner-right::after {
+    right: 20px;
+    bottom: 10px;
+  }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .portfolio-box {
+    grid-template-columns: auto auto;
+  }
+  .contact-right button {
+    padding: 10px 50px !important;
+  }
+  .about-left img,
+  .banner-right img {
+    width: 100%;
+    height: auto;
+  }
+  .banner-right::before {
+    top: 50px;
+    left: 50px;
+  }
+  .banner-right::after {
+    right: 50px;
+    bottom: 50px;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .follow-box .social span {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .service-item .title h3 {
+    font-size: 15px;
+  }
+  .blog-box {
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+  .portfolio-card {
+    padding: 0%;
+    width: auto;
+  }
+  .blog-card {
+    width: auto;
+  }
+  .contact-right input {
+    height: 60px;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  .contact-form {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .menu ul li {
+    margin: 5px 0 !important;
+  }
+  .follow-box {
+    gap: 30px;
+  }
+  .follow-box .social {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 5px;
+  }
+  .blog-box {
+    display: grid;
+    grid-template-columns: auto auto !important;
+  }
+  .portfolio-box {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .item-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .service-item .title h3 {
+    font-size: 18px;
+  }
+  .about-left img {
+    width: 100%;
+    height: auto;
+  }
+  .banner-right img {
+    width: 100%;
+    height: auto;
+  }
+  .banner-right {
+    width: 300px;
+  }
+
+  .banner-right::after {
+    right: 30px;
+    bottom: 50px;
+  }
+  .banner-right::before {
+    left: 40px;
+    top: 50px;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .menu ul li {
+    margin: 5px 0 !important;
+  }
+  .follow-box {
+    gap: 30px;
+  }
+  .follow-box .social {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 5px;
+  }
+  .blog-box {
+    display: grid;
+    grid-template-columns: auto auto !important;
+  }
+  .portfolio-box {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .item-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .service-item .title h3 {
+    font-size: 18px;
+  }
+  .about-left img {
+    width: 100%;
+    height: auto;
+  }
+  .banner-right img {
+    width: 100%;
+    height: auto;
+  }
+  .banner-right {
+    width: 300px;
+  }
+
+  .banner-right::after {
+    right: 30px;
+    bottom: 50px;
+  }
+  .banner-right::before {
+    left: 40px;
+    top: 50px;
+  }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.09);
+  }
+  .item-wrapper {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .menu ul li {
+    padding: 5px 10px;
+    font-size: 9px;
+    margin: 4px;
+    font-weight: 400;
+  }
+  .title h1 {
+    font-size: 2rem !important;
+  }
+  .portfolio-box {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .blog-box {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .blog-card {
+    width: auto !important;
+    padding: 5px !important;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .contact-left {
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+  }
+  .form-control {
+    width: 100% !important;
+  }
+  .contact-right #message {
+    width: 100%;
+  }
+  .service-item .desc p {
+    width: 100%;
+  }
+  .nav-item .nav-link {
+    font-weight: 600;
+    background-color: #2196f3;
+    margin: 5px;
+    color: #fff !important;
+    border-radius: 5px;
+  }
+  .service-item .title h3 {
+    font-size: 30px;
+  }
+  .follow-box {
+    width: 60%;
+    background: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+  }
+  .follow-box .social {
+    display: flex;
+    padding: 3px;
+  }
+  .follow-box .social span {
+    font-size: 14px;
+    padding: 4px;
+  }
+  .portfolio-card {
+    width: auto !important;
+    margin: 10px !important;
+  }
+  .banner-right img {
+    width: 100%;
+  }
+  .banner-content {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .banner {
+    padding: 0 !important;
+  }
+  .left-content h1 {
+    font-size: 20px;
+  }
+  .left-content p {
+    padding: 10px;
+  }
+  .left-content h3 {
+    padding: 10px;
+  }
+  .left-content h1 {
+    padding: 10px !important;
+  }
+  .banner-right {
+    margin-top: 30px;
+  }
+  .left-content #button {
+    margin: 10px;
+  }
+  .banner-right::after {
+    right: 40px;
+  }
+  .service-content .service-item {
+    width: 100%;
+  }
+  .about-left img {
+    height: auto;
+    width: 100%;
+  }
+  .banner-right img {
+    width: 100%;
+    height: auto;
+  }
+  .left-content {
+    padding: 30px;
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .item-wrapper {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .title h1 {
+    font-size: 1rem !important;
+  }
+  .portfolio-box {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .blog-box {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .blog-card {
+    width: auto !important;
+    padding: 5px !important;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .contact-left {
+    padding: 10px;
+    width: 72%;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+  }
+  .form-control {
+    width: 70% !important;
+  }
+  .contact-right #message {
+    width: 70%;
+  }
+  .follow-box {
+    width: 60%;
+    background: none;
+  }
+  .follow-box .social span {
+    font-size: 8px;
+  }
+  .portfolio-card {
+    width: auto !important;
+    margin: 10px !important;
+  }
+  .banner-right img {
+    width: 100%;
+  }
+  .banner-content {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .banner {
+    padding: 0 !important;
+  }
+  .left-content h1 {
+    font-size: 20px;
+  }
+  .left-content p {
+    padding: 10px;
+  }
+  .left-content h3 {
+    padding: 10px;
+  }
+  .left-content h1 {
+    padding: 10px !important;
+  }
+  .banner-right {
+    margin-top: 30px;
+  }
+  .left-content #button {
+    margin: 10px;
+  }
+  .banner-right::after {
+    right: 10px;
+  }
+}

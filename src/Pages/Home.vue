@@ -18,6 +18,7 @@ import ServicesVue from '@/components/Services.vue';
 import PortfolioFilterVue from '@/components/PortfolioFilter.vue';
 import LetestBlogVue from '@/components/LetestBlog.vue';
 import ContactUsVue from '@/components/ContactUs.vue';
+import "../assets/Responsive.css"
 export default {
     name: 'Home-H',
     components: {

@@ -1,5 +1,5 @@
 <template>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="title">
                 <h1>contact us</h1>
@@ -17,21 +17,20 @@
                     </div>
                 </div>
                 <div class="contact-right ">
-                    <form action="/">
+                    <form @submit="FormSubmit">
                         <div class="form-group">
-                            <label for="username">username</label>
-                            <input type="text" class="form-control" name="username" id="username"
-                                aria-describedby="helpId" placeholder="username">
+                            <input type="text" v-model="Message.name" class="form-control" name="username"
+                                aria-describedby="helpId" placeholder="please enter your username">
                         </div>
                         <div class="form-group">
-                            <label for="username">E-mail</label>
-                            <input type="email" class="form-control" name="email" id="username"
-                                aria-describedby="helpId" placeholder="email">
+                            <input type="email" v-model="Message.email" class="form-control" name="email"
+                                aria-describedby="helpId" placeholder="please enter your email">
                         </div>
                         <div class="form-group">
-                            <textarea name="message" id="message" cols="60" rows="7"></textarea>
+                            <textarea name="message" v-model="Message.messages" id="message" cols="60"
+                                placeholder="please enter your message" rows="7"></textarea>
                         </div>
-                        <button type="button" class="btn btn-primary px-5 py-2">Submit</button>
+                        <button type="submit" class="btn btn-primary px-5 py-2">Submit</button>
                     </form>
                     <div class="follow-box">
                         <div class="social">
@@ -83,7 +82,34 @@
 
 <script>
 export default {
-    name: 'contact-c'
+    name: 'contact-c',
+    data() {
+        return {
+            Message:
+            {
+                name: null,
+                email: null,
+                messages: null
+            }
+        }
+    }, methods: {
+        FormSubmit(e) {
+            e.preventDefault()
+            this.Message.name
+            this.Message.email
+            this.Message.messages
+            return {
+                InputVall: [
+                    {
+                        "name": this.Message.name,
+                        "email": this.Message.email,
+                        "message": this.Message.messages
+                    }
+                ]
+            }
+
+        }
+    }
 }
 </script>
 <style>
@@ -128,40 +154,51 @@ export default {
 }
 
 .contact-right input {
-    border: 2px solid #bbb;
+    border: 2px solid #2196f3;
     outline: none;
 }
 
 .contact-right #message {
-    border: 2px solid #bbb;
+    border: 2px solid #2196f3;
     resize: none;
     outline: none;
     border-radius: 5px;
+    width: 100%;
 }
 
 .contact-right button {
-    font-size: 20px;
+    font-size: 15px;
     text-transform: capitalize;
     font-weight: 600;
     color: #fff;
 }
 
+.contact-right button:hover {
+    background: #000;
+    color: #fff;
+}
+
 .follow-box {
-    padding: 10px 0;
+    padding: 5px 0;
     display: flex;
+    background: #2196f3;
+    border-radius: 5px;
     flex-direction: row;
+    margin-top: 30px;
 }
 
 .follow-box .social {
     padding: 10px;
+    background: #2196f3;
+    border-radius: 20px;
 }
 
 .follow-box .social span {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     text-transform: capitalize;
     font-weight: bolder;
-    color: #000;
+    color: #fff;
 }
 
 .follow-box .social span:last-child {
@@ -169,6 +206,6 @@ export default {
 }
 
 .follow-box .social span:last-child:hover {
-    color: #2196f3;
+    color: #000;
 }
 </style>

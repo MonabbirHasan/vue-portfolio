@@ -23,7 +23,7 @@
                             </div>
                             <div class="comment react-box">
                                 <span>
-                                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
                                 </span>
                                 <span>30</span>
                             </div>
@@ -253,5 +253,8 @@ export default {
     text-transform: capitalize;
     color: #fff;
     padding: 3px !important;
+}
+.blog-card .read-more a:hover{
+    background: #000;
 }
 </style>
